@@ -1,0 +1,53 @@
+<div className="App">
+    <section id="home" class="hero-section">
+      <div class="hero-shape">
+        <img src="assets/img/hero/hero-shape.svg" alt="" class="shape" />
+      </div>
+      <div class="container">
+       
+                <h4 style="text-align: center"> Patient Details</h4>
+
+                
+                <div class="table-wrapper">
+                  <input  type="text"  placeholder="Please Enter The Id" [(ngModel)]="patientId">
+                <button type="submit" (click)="getPatientDetails(patientId)">Submit</button>
+                  <table class="fl-table" >
+                    <thead>
+                      <tr>
+                        <th>Patient Id</th>
+                        <th>Patient Name</th>
+                        <th>Patient Age</th>
+                        <th>Date of Visit</th>
+                        <th>Visited Doctor</th>
+                        <th>Precription</th>
+                        <!--<th>Doctor's ID</th>-->
+                        <!-- <th>Delete</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr >
+                        <td>{{ patients.id}}</td>
+                        <td>{{ patients.name }}</td>
+                        <td>{{ patients.age}}</td>
+                        <td>{{ patients.dateOfVisit }}</td>
+                        <td>{{ patients.visitedDoctor }}</td>
+                        <td>{{ patients.prescription }}</td>
+                       <!-- <td>{{ patients.doctId}}</td>-->
+                         <!-- <td class="text-center"><button class="btn btn-danger btn-xs btn-left-mr" (click)="deletePatient(patients.patient.patientId)" ><span class="glyphicon glyphicon-remove" ></span> Delete</button></td> -->
+                      </tr>
+                    </tbody>
+  
+                    <tbody></tbody>
+                  </table>
+                  <button type="submit" (click)="back()">Back</button>
+                </div>
+                
+              </div>
+              
+  
+         
+    </section>
+  </div>
+  
+  
+  

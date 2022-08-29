@@ -1,0 +1,23 @@
+
+  .self_margin{
+    margin-top: -108px;
+  }
+  .item_center p{
+
+    text-align: center;
+    padding-top: 18px;
+  }
+  .footer{
+    height: 50px;
+  
+  }
+  .reg-btn{
+    background-color: rgb(236, 176, 45);
+    margin-top: 10px;
+ }
+  .reg-btn:hover{
+     background-color: rgb(226, 199, 43);
+  }
+  .form-group{
+    margin-top: 10px;
+  }
